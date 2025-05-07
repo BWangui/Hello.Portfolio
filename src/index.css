@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-base text-surface font-sans leading-relaxed;
+}
+
+a {
+  @apply text-accent hover:underline;
+}
