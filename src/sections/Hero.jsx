@@ -1,17 +1,21 @@
-import React from "react";
+import React from 'react';
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="h-screen flex flex-col items-center justify-center text-center px-4 bg-cover bg-center"
-      style={{ backgroundImage: `url('/bg-hero.jpg')` }}
-    >
-      <h1 className="text-5xl font-bold mb-2 text-white">Your Name</h1>
-      <p className="text-2xl font-bold mb-6 text-sky-400">Software Engineer</p>
-      <a href="#projects" className="px-6 py-3 bg-accent text-white rounded-full">
-        View Projects
-      </a>
+    <section className="bg-white text-gray-900 py-16 px-8">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div>
+          <h1 className="text-4xl font-bold mb-4">I'm Web Designer</h1>
+          <h2 className="text-blue-600 text-3xl font-semibold mb-4">Gabriel Garcia</h2>
+          <p className="mb-6 max-w-md">I specialize in creating responsive websites and user-friendly designs for clients all around the world.</p>
+          <button className="bg-blue-600 hover:bg-blue-800 text-white px-6 py-2 rounded-lg transition">
+            Learn More
+          </button>
+        </div>
+        <img src="/images/profile.png" alt="Profile" className="w-64 rounded-full mt-8 md:mt-0" />
+      </div>
     </section>
   );
-}
+};
+
+export default Hero;
